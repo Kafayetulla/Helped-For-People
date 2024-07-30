@@ -71,8 +71,9 @@
 .Get-My-Update-email-subscribe{
     text-align: center;
     box-shadow: 10px 20px 40px;
-    padding: 50px;
-    margin: 10px 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 300px;
 }
 #email{
     background-color:aqua;
@@ -92,4 +93,29 @@ footer{
     color: red;
     margin: 10px;
     font-size: 30px;
+}
+/* small device  */
+@media screen and (max-width:576px) {
+    .container{
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        margin: 0 auto;
+        color: white;
+    }
+    .img{
+        max-width: 100%;
+    }
+    .Donate-plan-container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .depend-donation-container,.depend-donation-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .depend-donation-container img,.depend-donation-container img{
+        max-width: 100%;
+    }
 }
